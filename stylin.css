@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+@font-face {
+  font-family: 'Beyond Regular';
+  src:
+  url('/mortis-natus.github.io/sleeplessbeyond-demo/assets/Beyond-Regular.ttf') format('ttf'),
+  url('/mortis-natus.github.io/sleeplessbeyond-demo/assets/beyond-regular-webfont.woff') format('woff'),
+  url('/mortis-natus.github.io/sleeplessbeyond-demo/assets/beyond-regular-webfont.woff2') format('woff2');
+  unicode-range: U+0020-007F, U+00E8;
+}
+
+.pangolin {
+  font-family: 'Pangolin', 'Lucida Console', monospace;
+}
+
+.beyond {
+  font-family: 'Beyond Regular', 'Pangolin', 'Lucida Console', monospace;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.black, a:hover  {
+  color: black;
+}
+
+.pink, a {
+  color: #ff48e5;
+}
+
+.lime, .charname, .charfacts, .pages a:hover {
+  color: #71d522;
+}
+
+.whiteish {
+  color: #cecece;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.purple {
+  color: #862cb8;
+}
+
+::selection {
+  background-color: #ff48e5;
+  color: black;
+  text-shadow: 1px 1px 0px white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  --scrollbarBG: #131313;
+  --scrollbarBG2: #393939;
+  --thumbBG: #3e0a5b;
+  --thumbBG2: #56167b;
+  --scrollbarBorder: #3e0a5b;
+  --scrollbarBGBorder: #131313;
+  /* --thumbBG: black;
+  --scrollbarBorder: black; */
+}
+body::-webkit-scrollbar {
+  width: 15px;
+}
+body {
+/*   scrollbar-width: thin; */
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+  /* background: linear-gradient(
+      to bottom,
+      var(--scrollbarBG),
+      var(--scrollbarBG2)
+      ); */
+  border: 1px solid var(--scrollbarBGBorder);
+}
+body::-webkit-scrollbar-thumb {
+  /* background-color: var(--thumbBG) ; */
+  background: linear-gradient(
+      to bottom,
+      var(--thumbBG),
+      var(--thumbBG2),
+      var(--thumbBG)
+      );
+  border-radius: 0px;
+  border: 1px solid var(--scrollbarBorder);
+}
+
+body {
+  box-sizing: border-box;
+  background-color: black;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 9em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 0px black;
+  margin-top: 4vh;
+}
+
+h2 {
+  font-size: 5em;
+  margin: 0;
+  text-shadow: 2px 2px 0px black;
+  margin-bottom: 2vh;
+}
+
+p {
+  font-size: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px 0px black;
+}
+
+.pages {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pages li::before {
+  content: "\200B";
+}
+
+ul.pages {
+  font-size: 2em;
+}
+
+.pages li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#external-link-buttons {
+  padding: 25px;
+}
+
+#external-link-buttons img {
+  height: 100px;
+  width: auto;
+  padding: 30px;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  background-color: #71d522;
+  background-image: linear-gradient(
+    to bottom,
+    #71d522,
+    #c5ca3e
+    );
+  border-radius: 30px;
+  border-color: black;
+  border-width: 5px;
+  border-spacing: 10px;
+  border-style: solid;
+  transition: 0.2s ease-out;
+  margin-bottom: 1.5%;
+}
+
+#patreon:hover {
+  background-color: #e64f39;
+  background-image: linear-gradient(
+    to bottom,
+      #FF424D,
+      #FF424D
+    );
+  border-radius: 0px;
+}
+
+#twitter:hover {
+  background-color: #1da1f2;
+  background-image: linear-gradient(
+    to bottom,
+      #1da1f2,
+      #1da1f2
+    );
+  border-radius: 0px;
+}
+
+#discord:hover {
+  background-color: #7289DA;
+  background-image: linear-gradient(
+    to bottom,
+      #7289DA,
+      #7289DA
+    );
+  border-radius: 0px;
+}
+
+/* #tumblr:hover {
+  background-color: #34526f;
+  background-image: linear-gradient(
+    to bottom,
+      #34526f,
+      #34526f
+    );
+  border-radius: 0px;
+} */
+
+#super-wrapper {
+  display: flex;
+}
+
+#outer-wrapper {
+  max-width: 100vw;
+  display: inline-flex;
+  margin: auto;
+}
+
+#inner-wrapper {
+  max-width: 980px;
+  width: 66.1vw;
+}
+
+#scoonga-doonga-title img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 20px;
+}
+
+#nav-title {
+  max-width: 980px;
+  margin: auto;
+  height: 36vw;
+  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#arrows {
+  max-width: 980px;
+  height: 15vw;
+  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationArrows_Only.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#nav-title-arrowless {
+  max-width: 980px;
+  margin: auto;
+  height: 36vw;
+  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar_NoArrows.png"), linear-gradient(
+      to bottom,
+      #3b0a59 29%,
+      #380a55 34%,
+      #000000 60%
+      /* #398600,
+      #67ca3e */
+      );
+  /* background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar_NoArrows.png"); */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-color: #50bb00; */
+  /* padding-bottom: 10vw; */
+}
+
+#nav-title a, #nav-title-arrowless a, #arrows a {
+  display: block;
+  float: left;
+}
+
+#nav-title-arrowless #nav-buttons {
+  padding-left: 28%;
+}
+
+#home {
+  width: 50%;
+  height: 23vw;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#first2, #latest2 {
+  /* max-width: 91px; */
+  width: 11%;
+  height: 12vw;
+}
+
+#previous2, #next2 {
+  /* max-width: 135px; */
+  width: 16.5%;
+  height: 12vw;
+}
+
+#about2, #archive2, #cast2 {
+  /* max-width: 116px; */
+  width: 15%;
+  height: 12vw;
+}
+
+#arrows #previous2 {
+  margin-right: 43%;
+}
+
+#nav-title-arrowless #about2, #nav-title-arrowless #archive2, #nav-title-arrowless #cast2 {
+  margin-right: 7.5%;
+}
+
+#left-tentacles {
+  max-width: 200px;
+  width: 15.45vw;
+  min-height: 100vh;
+  /* background-color: #71d522; */
+  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/Tentacles1.png");
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+#content {
+  margin: auto;
+  max-width: 980px;
+  /* background-color: #ff48e5; */
+}
+
+#bed {
+  padding-left: 6.3%;
+}
+
+img#first {
+  width: 100%;
+  max-width: 530px;
+}
+
+#right-tentacles {
+  max-width: 200px;
+  width: 15.45vw;
+  min-height: 100vh;
+  /* background-color: #71d522; */
+  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/Tentacles2.png");
+  background-repeat: repeat-y;
+  background-size: contain;
+}
+
+#page-slot {
+  display: flex;
+  max-width: 980px;
+  width: 100%;
+  max-height: 1405px;
+  background-color: black;
+}
+
+img#page {
+  max-width: 980px;
+  width: 100%;
+}
+
+#arrows img {
+  height: 130px;
+}
+
+/* .has-bg {
+  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/Background.png");
+  background-size: 2500px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-color: #220a2f;
+  background-attachment: fixed;
+} */
+
+.has-bg:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/Background.png") no-repeat top center;
+  -webkit-background-size: 2500px;
+  -moz-background-size: 2500px;
+  -o-background-size: 2500px;
+  background-size: 2500px;
+  background-color: #220a2f;
+}
+
+.blackspace {
+  background-color: black;
+  width: 1000vw;
+}
+
+.blackspace-exception {
+  background-color: black;
+}
+
+.shite-divider {
+  max-width: 800px;
+  width: 100%;
+  height: 10px;
+  background-image: linear-gradient(
+    to right,
+    transparent,
+    #c5ca3e,
+    #71d522,
+    #c5ca3e,
+    transparent
+    );
+    /* background-image: linear-gradient(
+      to right,
+      transparent,
+      #ff48e5,
+      #71d522,
+      #ff48e5,
+      transparent
+      ); */
+}
+
+#vol-1, #vol-2, #vol-3 {
+  /* background-color: black; */
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.pagecontainer {
+  display: none;
+  margin-left: 5%;
+  margin-right: 5%;
+  /* background-color: lime; */
+}
+
+.inactive {
+  text-decoration: none;
+}
+
+.inactive:hover {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  transition: 0.2s ease-out;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  /* text-underline-position: under; */
+  letter-spacing: 20px;
+  transition: 0.2s ease-out;
+}
+
+.charslot {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-top: 5vh;
+}
+
+.img-cell {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-cell img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.text-cell {
+  width: 100%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.charname {
+  text-align: center;
+  padding-left: 15px;
+  font-size: 5.85em;
+  margin: 0;
+  text-shadow: 3px 3px 0px black;
+  margin-bottom: 45px;
+}
+
+.charfacts {
+  text-align: left;
+  list-style-type: none;
+  font-size: 2.75em;
+  margin-left: 80px;
+  margin-right: 70px;
+  margin-bottom: 0;
+  margin-top: 0;
+  text-shadow: 3px 3px 0px black;
+}
+
+.charfacts li {
+  padding-left: 4.5rem;
+  text-indent: -4.5rem;
+  padding-bottom: 10px;
+}
+
+.charfacts li::before {
+  content: "\200B";
+  display: inline-block;
+  height: 4.5rem;
+  width: 4.5rem;
+  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/BulletPoint.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.charfacts li {
+  padding-top: 10px;
+  text-shadow: 1px 1px 0px black;
+}
+
+/* Tablet View */
+@media screen and (min-width: 768px){
+  /* h1 {
+    font-size: 6em;
+  }
+
+  h2 {
+    font-size: 3.5em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  .pages {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .pages li::before {
+    content: "\200B";
+  }
+
+  ul.pages {
+    font-size: 1.5em;
+  } */
+
+/*
+  .charname {
+    font-size: 3.5em;
+  }
+
+  .charfacts {
+    font-size: 1.5em;
+  }
+
+  .shite-divider {
+    height: 7.5px;
+  } */
+    #outer-wrapper {
+      /* max-width: 1300px; */
+      /*background-color: #862cb8;*/
+      width: auto;
+    }
+
+    #inner-wrapper {
+      max-width: 980px;
+      width: 66.1vw;
+      /* padding-bottom: 175px; */
+    }
+}
+
+/* Desktop View */
+@media screen and (min-width: 981px){
+  h1 {
+    font-size: 6em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  #scoonga-doonga-title img {
+    max-width: 70%;
+    max-height: 250px;
+  }
+
+  .pages {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .pages li::before {
+    content: "\200B";
+  }
+
+  ul.pages {
+    font-size: 1em;
+  }
+
+  .pages li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .charslot {
+    display: flex;
+    max-width: 800px;
+  }
+
+  .img-cell {
+    width: 40%;
+    max-width: 500px;
+  }
+
+  .img-cell img {
+    max-width: 100%;
+  }
+
+  .text-cell {
+    width: 50%;
+    max-width: 300px;
+  }
+
+  .shorty {
+    margin-top: 125px;
+  }
+
+  .charname {
+    text-align: justify;
+    font-size: 3.5em;
+    margin-bottom: 20px;
+  }
+
+  .charfacts {
+    text-align: left;
+    font-size: 1.5em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .charfacts li {
+    padding-left: 2.25rem;
+    text-indent: -2.25rem;
+  }
+
+  .charfacts li::before {
+    content: "\200B";
+    display: inline-block;
+    height: 2.25rem;
+    width: 2.25rem;
+    background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/BulletPoint.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .shite-divider {
+    height: 5px;
+  }
+
+  .blackspace-exception {
+    width: 1000vw;
+  }
+
+  #external-link-buttons img {
+    height: 60px;
+    padding: 20px;
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-width: 3px;
+    border-radius: 20px;
+  }
+
+  #outer-wrapper {
+    /* max-width: 1300px; */
+    /*background-color: #862cb8;*/
+    min-height: 100vh;
+    width: auto;
+  }
+
+  #inner-wrapper {
+    max-width: 800px;
+    width: 66.1vw;
+    padding-bottom: 175px;
+  }
+
+  #nav-title {
+    max-width: 800px;
+    width: 100%;
+    min-height: 157px;
+    height: 100%;
+    max-height: 277px;
+    background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  #nav-title-arrowless {
+    max-width: 800px;
+    width: 100%;
+    min-height: 157px;
+    height: 100%;
+    max-height: 277px;
+    background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar_NoArrows.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+  }
+
+  #arrows {
+    max-width: 800px;
+    height: 112px;
+    background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationArrows_Only.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  #home {
+    width: 50%;
+    min-height: 100px;
+    height: 100%;
+    max-height: 170px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-bottom: 1vw;
+  }
+
+  #first2, #latest2 {
+    max-width: 91px;
+    max-height: 100px;
+    width: 11%;
+    min-height: 75px;
+    height: 100%;
+  }
+
+  #previous2, #next2 {
+    max-width: 135px;
+    max-height: 100px;
+    width: 16.5%;
+    min-height: 75px;
+    height: 100%;
+  }
+
+  #about2, #archive2, #cast2 {
+    max-width: 116px;
+    max-height: 100px;
+    width: 15%;
+    min-height: 75px;
+    height: 100%;
+  }
+}
+
+/* @media screen and (min-width: 200px) and (max-width: 767px) {
+  .charname {
+    font-size: 5em;
+  }
+
+  .charfacts {
+    font-size: 2em;
+  }
+} */
