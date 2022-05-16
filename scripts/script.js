@@ -4,7 +4,7 @@ $(document).ready(initializePage);
 // $(window).resize(updateWidthMeasurement);
 window.addEventListener('resize', updateWidthMeasurement);
 
-// TODO: preload font + change urls to variables, other preload method responsiveness, collapse/expand text on volume headings hover?, try changing mouseenter/mouseleave to mouseover?, incraese just body text, link text, and char decs on tablet view, add footer, ask if hek wants an autosave feature?, make sure scroll bars disappear completely, weird page gap issue on the bottom, weird gap at top of #content, figure out how to fix the media queries problem (it works on desktop but not on tablets and mobile??? wtf), make sure nav title with the arrows never has its last button go off to a new row, redo font structure properly?, headings go off of the edge of the window (low priority), glitch at bottom of mobile [page], failure to have div out on mobile at times, cross-bowser compatibility issue: bg not scrolling on samsung internet/safari + check if it works on firefox and edge too, bullet points and scrollbar, graphical glitch on dashed underlines, iphone x view not swapping properly, try to make it so you won'y need to have the scroll visible?, scrollbar on firefox not working, add tentacles to below wrapper so that on apple devices the don't appear to be cut off at bottom of page, ipad image stretch/compress?, back and forward keyboard shortcuts
+// TODO: reduce size of front page logo, replace discord icon, update patreon, twitter and discord colors, ask hek about latest button (move + change color?) preload font + change urls to variables, other preload method responsiveness, collapse/expand text on volume headings hover?, try changing mouseenter/mouseleave to mouseover?, incraese just body text, link text, and char decs on tablet view, add footer, ask if hek wants an autosave feature?, make sure scroll bars disappear completely, weird page gap issue on the bottom, weird gap at top of #content, figure out how to fix the media queries problem (it works on desktop but not on tablets and mobile??? wtf), make sure nav title with the arrows never has its last button go off to a new row, redo font structure properly?, headings go off of the edge of the window (low priority), glitch at bottom of mobile [page], failure to have div out on mobile at times, cross-bowser compatibility issue: bg not scrolling on samsung internet/safari + check if it works on firefox and edge too, bullet points and scrollbar, graphical glitch on dashed underlines, iphone x view not swapping properly, try to make it so you won'y need to have the scroll visible?, scrollbar on firefox not working, add tentacles to below wrapper so that on apple devices the don't appear to be cut off at bottom of page, ipad image stretch/compress?, back and forward keyboard shortcuts
 
 // OPTIMIZE: all existing js, remove unecessary css, da font: https://css-tricks.com/three-techniques-performant-custom-font-usage/,
 
@@ -34,38 +34,38 @@ window.addEventListener('resize', updateWidthMeasurement);
 //     var img22 = new Image();
 //     var img23 = new Image();
 //
-//     img1.src = "assets/StartReading_ButtonAnimated.gif";
-//     img2.src = "assets/StartReading_ButtonStatic.gif";
+//     img1.src = "../images/StartReading_ButtonAnimated.gif";
+//     img2.src = "../images/StartReading_ButtonStatic.gif";
 //
-//     img3.src = "assets/Cast_ButtonAnimated.gif";
-//     img4.src = "assets/Cast_ButtonStatic.png";
+//     img3.src = "../images/Cast_ButtonAnimated.gif";
+//     img4.src = "../images/Cast_ButtonStatic.png";
 //
-//     img5.src = "assets/Archive_ButtonAnimated.gif";
-//     img6.src = "assets/Archive_ButtonStatic.png";
+//     img5.src = "../images/Archive_ButtonAnimated.gif";
+//     img6.src = "../images/Archive_ButtonStatic.png";
 //
-//     img7.src = "assets/About_ButtonAnimated.gif";
-//     img8.src = "assets/About_ButtonStatic.png";
+//     img7.src = "../images/About_ButtonAnimated.gif";
+//     img8.src = "../images/About_ButtonStatic.png";
 //
-//     img9.src = "assets/Latest_ButtonAnimated.gif";
-//     img10.src = "assets/Latest_ButtonStatic.png";
+//     img9.src = "../images/Latest_ButtonAnimated.gif";
+//     img10.src = "../images/Latest_ButtonStatic.png";
 //
-//     img11.src = "assets/Background.png";
-//     img12.src = "assets/Tentacles1.png";
-//     img13.src = "assets/Tentacles2.png";
+//     img11.src = "../images/Background.png";
+//     img12.src = "../images/Tentacles1.png";
+//     img13.src = "../images/Tentacles2.png";
 //
-//     img14.src = "assets/NavigationBar.png";
-//     img15.src = "assets/NavigationBar_NoArrows.png";
-//     img16.src = "assets/NavigationArrows_Only.png";
+//     img14.src = "../images/NavigationBar.png";
+//     img15.src = "../images/NavigationBar_NoArrows.png";
+//     img16.src = "../images/NavigationArrows_Only.png";
 //
-//     img17.src = "assets/magilou.png";
-//     img18.src = "assets/rokurou.png";
-//     img19.src = "assets/eizen.png";
+//     img17.src = "../images/magilou.png";
+//     img18.src = "../images/rokurou.png";
+//     img19.src = "../images/eizen.png";
 //
-//     img20.src = "assets/Patreon_Mark_Black.png";
-//     img21.src = "assets/iconmonstr-twitter-1-240.png";
-//     img22.src = "assets/iconmonstr-tumblr-1-240.png";
+//     img20.src = "../images/Patreon_Mark_Black.png";
+//     img21.src = "../images/iconmonstr-twitter-1-240.png";
+//     img22.src = "../images/iconmonstr-tumblr-1-240.png";
 //
-//     img23.src = "assets/SleeplessBeyond_Logo_Large.png";
+//     img23.src = "../images/SleeplessBeyond_Logo_Large.png";
 //   }
 // }
 // function addLoadEvent(func) {
@@ -200,46 +200,46 @@ function initializePage() {
   if (onDesktop) {
     $( "#first" )
       .mouseenter(function() {
-        $(this).attr("src","assets/StartReading_ButtonAnimated.gif");
+        $(this).attr("src","../images/StartReading_ButtonAnimated.gif");
       })
       .mouseleave(function() {
-        $(this).attr("src","assets/StartReading_ButtonStatic.gif");
+        $(this).attr("src","../images/StartReading_ButtonStatic.gif");
       });
   } else {
-    $("#first").attr("src","assets/StartReading_ButtonAnimated.gif");
+    $("#first").attr("src","../images/StartReading_ButtonAnimated.gif");
 
   }
 
   $( "#cast" )
     .mouseenter(function() {
-      $(this).attr("src","assets/Cast_ButtonAnimated.gif");
+      $(this).attr("src","../images/Cast_ButtonAnimated.gif");
     })
     .mouseleave(function() {
-      $(this).attr("src","assets/Cast_ButtonStatic.png");
+      $(this).attr("src","../images/Cast_ButtonStatic.png");
     });
 
   $( "#archive" )
     .mouseenter(function() {
-      $(this).attr("src","assets/Archive_ButtonAnimated.gif");
+      $(this).attr("src","../images/Archive_ButtonAnimated.gif");
     })
     .mouseleave(function() {
-      $(this).attr("src","assets/Archive_ButtonStatic.png");
+      $(this).attr("src","../images/Archive_ButtonStatic.png");
     });
 
   $( "#about" )
     .mouseenter(function() {
-      $(this).attr("src","assets/About_ButtonAnimated.gif");
+      $(this).attr("src","../images/About_ButtonAnimated.gif");
     })
     .mouseleave(function() {
-      $(this).attr("src","assets/About_ButtonStatic.png");
+      $(this).attr("src","../images/About_ButtonStatic.png");
     });
 
   $( "#latest" )
     .mouseenter(function() {
-      $(this).attr("src","assets/Latest_ButtonAnimated.gif");
+      $(this).attr("src","../images/Latest_ButtonAnimated.gif");
     })
     .mouseleave(function() {
-      $(this).attr("src","assets/Latest_ButtonStatic.png");
+      $(this).attr("src","../images/Latest_ButtonStatic.png");
     });
 
   let toggled1 = false;
