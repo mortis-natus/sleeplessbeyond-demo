@@ -34,38 +34,38 @@ window.addEventListener('resize', updateWidthMeasurement);
 //     var img22 = new Image();
 //     var img23 = new Image();
 //
-//     img1.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/StartReading_ButtonAnimated.gif";
-//     img2.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/StartReading_ButtonStatic.gif";
+//     img1.src = "assets/StartReading_ButtonAnimated.gif";
+//     img2.src = "assets/StartReading_ButtonStatic.gif";
 //
-//     img3.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/Cast_ButtonAnimated.gif";
-//     img4.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/Cast_ButtonStatic.png";
+//     img3.src = "assets/Cast_ButtonAnimated.gif";
+//     img4.src = "assets/Cast_ButtonStatic.png";
 //
-//     img5.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/Archive_ButtonAnimated.gif";
-//     img6.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/Archive_ButtonStatic.png";
+//     img5.src = "assets/Archive_ButtonAnimated.gif";
+//     img6.src = "assets/Archive_ButtonStatic.png";
 //
-//     img7.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/About_ButtonAnimated.gif";
-//     img8.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/About_ButtonStatic.png";
+//     img7.src = "assets/About_ButtonAnimated.gif";
+//     img8.src = "assets/About_ButtonStatic.png";
 //
-//     img9.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/Latest_ButtonAnimated.gif";
-//     img10.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/Latest_ButtonStatic.png";
+//     img9.src = "assets/Latest_ButtonAnimated.gif";
+//     img10.src = "assets/Latest_ButtonStatic.png";
 //
-//     img11.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/Background.png";
-//     img12.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/Tentacles1.png";
-//     img13.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/Tentacles2.png";
+//     img11.src = "assets/Background.png";
+//     img12.src = "assets/Tentacles1.png";
+//     img13.src = "assets/Tentacles2.png";
 //
-//     img14.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar.png";
-//     img15.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar_NoArrows.png";
-//     img16.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationArrows_Only.png";
+//     img14.src = "assets/NavigationBar.png";
+//     img15.src = "assets/NavigationBar_NoArrows.png";
+//     img16.src = "assets/NavigationArrows_Only.png";
 //
-//     img17.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/magilou.png";
-//     img18.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/rokurou.png";
-//     img19.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/eizen.png";
+//     img17.src = "assets/magilou.png";
+//     img18.src = "assets/rokurou.png";
+//     img19.src = "assets/eizen.png";
 //
-//     img20.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/Patreon_Mark_Black.png";
-//     img21.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/iconmonstr-twitter-1-240.png";
-//     img22.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/iconmonstr-tumblr-1-240.png";
+//     img20.src = "assets/Patreon_Mark_Black.png";
+//     img21.src = "assets/iconmonstr-twitter-1-240.png";
+//     img22.src = "assets/iconmonstr-tumblr-1-240.png";
 //
-//     img23.src = "/mortis-natus.github.io/sleeplessbeyond-demo/assets/SleeplessBeyond_Logo_Large.png";
+//     img23.src = "assets/SleeplessBeyond_Logo_Large.png";
 //   }
 // }
 // function addLoadEvent(func) {
@@ -200,46 +200,46 @@ function initializePage() {
   if (onDesktop) {
     $( "#first" )
       .mouseenter(function() {
-        $(this).attr("src","/mortis-natus.github.io/sleeplessbeyond-demo/assets/StartReading_ButtonAnimated.gif");
+        $(this).attr("src","assets/StartReading_ButtonAnimated.gif");
       })
       .mouseleave(function() {
-        $(this).attr("src","/mortis-natus.github.io/sleeplessbeyond-demo/assets/StartReading_ButtonStatic.gif");
+        $(this).attr("src","assets/StartReading_ButtonStatic.gif");
       });
   } else {
-    $("#first").attr("src","/mortis-natus.github.io/sleeplessbeyond-demo/assets/StartReading_ButtonAnimated.gif");
+    $("#first").attr("src","assets/StartReading_ButtonAnimated.gif");
 
   }
 
   $( "#cast" )
     .mouseenter(function() {
-      $(this).attr("src","/mortis-natus.github.io/sleeplessbeyond-demo/assets/Cast_ButtonAnimated.gif");
+      $(this).attr("src","assets/Cast_ButtonAnimated.gif");
     })
     .mouseleave(function() {
-      $(this).attr("src","/mortis-natus.github.io/sleeplessbeyond-demo/assets/Cast_ButtonStatic.png");
+      $(this).attr("src","assets/Cast_ButtonStatic.png");
     });
 
   $( "#archive" )
     .mouseenter(function() {
-      $(this).attr("src","/mortis-natus.github.io/sleeplessbeyond-demo/assets/Archive_ButtonAnimated.gif");
+      $(this).attr("src","assets/Archive_ButtonAnimated.gif");
     })
     .mouseleave(function() {
-      $(this).attr("src","/mortis-natus.github.io/sleeplessbeyond-demo/assets/Archive_ButtonStatic.png");
+      $(this).attr("src","assets/Archive_ButtonStatic.png");
     });
 
   $( "#about" )
     .mouseenter(function() {
-      $(this).attr("src","/mortis-natus.github.io/sleeplessbeyond-demo/assets/About_ButtonAnimated.gif");
+      $(this).attr("src","assets/About_ButtonAnimated.gif");
     })
     .mouseleave(function() {
-      $(this).attr("src","/mortis-natus.github.io/sleeplessbeyond-demo/assets/About_ButtonStatic.png");
+      $(this).attr("src","assets/About_ButtonStatic.png");
     });
 
   $( "#latest" )
     .mouseenter(function() {
-      $(this).attr("src","/mortis-natus.github.io/sleeplessbeyond-demo/assets/Latest_ButtonAnimated.gif");
+      $(this).attr("src","assets/Latest_ButtonAnimated.gif");
     })
     .mouseleave(function() {
-      $(this).attr("src","/mortis-natus.github.io/sleeplessbeyond-demo/assets/Latest_ButtonStatic.png");
+      $(this).attr("src","assets/Latest_ButtonStatic.png");
     });
 
   let toggled1 = false;

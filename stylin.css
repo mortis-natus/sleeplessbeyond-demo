@@ -3,9 +3,9 @@
 @font-face {
   font-family: 'Beyond Regular';
   src:
-  url('/mortis-natus.github.io/sleeplessbeyond-demo/assets/Beyond-Regular.ttf') format('ttf'),
-  url('/mortis-natus.github.io/sleeplessbeyond-demo/assets/beyond-regular-webfont.woff') format('woff'),
-  url('/mortis-natus.github.io/sleeplessbeyond-demo/assets/beyond-regular-webfont.woff2') format('woff2');
+  url('assets/Beyond-Regular.ttf') format('ttf'),
+  url('assets/beyond-regular-webfont.woff') format('woff'),
+  url('assets/beyond-regular-webfont.woff2') format('woff2');
   unicode-range: U+0020-007F, U+00E8;
 }
 
@@ -230,7 +230,7 @@ ul.pages {
   max-width: 980px;
   margin: auto;
   height: 36vw;
-  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar.png");
+  background-image: url("assets/NavigationBar.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -239,7 +239,7 @@ ul.pages {
 #arrows {
   max-width: 980px;
   height: 15vw;
-  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationArrows_Only.png");
+  background-image: url("assets/NavigationArrows_Only.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -248,7 +248,7 @@ ul.pages {
   max-width: 980px;
   margin: auto;
   height: 36vw;
-  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar_NoArrows.png"), linear-gradient(
+  background-image: url("assets/NavigationBar_NoArrows.png"), linear-gradient(
       to bottom,
       #3b0a59 29%,
       #380a55 34%,
@@ -256,7 +256,7 @@ ul.pages {
       /* #398600,
       #67ca3e */
       );
-  /* background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar_NoArrows.png"); */
+  /* background-image: url("assets/NavigationBar_NoArrows.png"); */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -311,7 +311,7 @@ ul.pages {
   width: 15.45vw;
   min-height: 100vh;
   /* background-color: #71d522; */
-  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/Tentacles1.png");
+  background-image: url("assets/Tentacles1.png");
   background-repeat: repeat-y;
   background-size: contain;
 }
@@ -336,7 +336,7 @@ img#first {
   width: 15.45vw;
   min-height: 100vh;
   /* background-color: #71d522; */
-  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/Tentacles2.png");
+  background-image: url("assets/Tentacles2.png");
   background-repeat: repeat-y;
   background-size: contain;
 }
@@ -359,7 +359,7 @@ img#page {
 }
 
 /* .has-bg {
-  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/Background.png");
+  background-image: url("assets/Background.png");
   background-size: 2500px;
   background-position: top;
   background-repeat: no-repeat;
@@ -376,7 +376,7 @@ img#page {
   width: 100%;
   height: 100%;
   z-index: -10;
-  background: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/Background.png") no-repeat top center;
+  background: url("assets/Background.png") no-repeat top center;
   -webkit-background-size: 2500px;
   -moz-background-size: 2500px;
   -o-background-size: 2500px;
@@ -502,7 +502,7 @@ img#page {
   display: inline-block;
   height: 4.5rem;
   width: 4.5rem;
-  background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/BulletPoint.png");
+  background-image: url("assets/BulletPoint.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -651,7 +651,7 @@ img#page {
     display: inline-block;
     height: 2.25rem;
     width: 2.25rem;
-    background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/BulletPoint.png");
+    background-image: url("assets/BulletPoint.png");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -693,7 +693,7 @@ img#page {
     min-height: 157px;
     height: 100%;
     max-height: 277px;
-    background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar.png");
+    background-image: url("assets/NavigationBar.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -705,7 +705,7 @@ img#page {
     min-height: 157px;
     height: 100%;
     max-height: 277px;
-    background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationBar_NoArrows.png");
+    background-image: url("assets/NavigationBar_NoArrows.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -715,7 +715,7 @@ img#page {
   #arrows {
     max-width: 800px;
     height: 112px;
-    background-image: url("/mortis-natus.github.io/sleeplessbeyond-demo/assets/NavigationArrows_Only.png");
+    background-image: url("assets/NavigationArrows_Only.png");
     background-size: contain;
     background-repeat: no-repeat;
   }
